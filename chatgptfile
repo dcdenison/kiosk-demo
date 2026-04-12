@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    const pages = [
+      "https://yourpage1.com",
+      "https://yourpage2.com"
+    ];
+    let i = 0;
+
+    setInterval(() => {
+      i = (i + 1) % pages.length;
+      window.location.href = pages[i];
+    }, 10000);
+  </script>
+</html>
